@@ -3,18 +3,18 @@ module("About Arrays (topics/about_arrays.js)");
 
 test("array literal syntax and indexing", function() {
     var favouriteThings = ["cellar door", 42, true]; // note that array elements do not have to be of the same type
-    equals(favouriteThings[0], __, 'what is in the first position of the array?');
-    equals(favouriteThings[1], __, 'what is in the second position of the array?');
-    equals(favouriteThings[2], __, 'what is in the third position of the array?');
+    equals(favouriteThings[0], 'cellar door', 'what is in the first position of the array?');
+    equals(favouriteThings[1], 42, 'what is in the second position of the array?');
+    equals(favouriteThings[2], true, 'what is in the third position of the array?');
 });
 
 test("array type", function() {
-    equals(typeof([]), __, 'what is the type of an array?');
+    equals(typeof([]), 'object', 'what is the type of an array?');
 });
 
 test("length", function() {
     var collection = ['a','b','c'];
-    equals(collection.length, __, 'what is the length of the collection array?');
+    equals(collection.length, 3, 'what is the length of the collection array?');
 });
 
 test("splice", function() {
